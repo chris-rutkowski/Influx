@@ -13,4 +13,12 @@
 
 ## Startup
 
-TODO
+```
+InfluxStartup.ConfigureSingleton(_config, services);
+```
+
+## Update nuget
+
+1. `cd Influx`
+2. `dotnet pack --configuration Release`
+3. `dotnet nuget push "bin/Release/Chris.Influx.{version}.nupkg" --source github`
